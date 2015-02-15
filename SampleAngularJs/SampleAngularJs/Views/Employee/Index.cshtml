@@ -1,0 +1,113 @@
+﻿<html ng-app="crudModule">
+@{
+    ViewBag.Title = "Index";
+}
+<head title="">
+    <h2>Employee Data using web API & AngularJs</h2>
+</head>
+
+<body>
+    <div class="row" ng-controller="crudController">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Add,Update or Delete Employee</h2>
+                </div>
+                <div class="panel-body">
+                    <!--old codes-->
+
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <span>Employee Name :</span>
+                            </td>
+                            <td>
+                                <input type="text" id="ename" ng-model="EmpName" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Salary :</span>
+                            </td>
+                            <td>
+                                <input type="text" id="salary" required ng-model="Salary" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Dept Name :</span>
+                            </td>
+                            <td>
+                                <input type="text" id="dname" required ng-model="DeptName" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Designation</span>
+                            </td>
+                            <td>
+                                <input type="text" id="desig" required ng-model="Designation" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" class="btn btn-default" id="new" value="New" ng-click="clear()" />
+                            </td>
+                            <td>
+                                <input type="button" class="btn btn-default" id="save" value="Save" ng-click="save()" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Employee No :</span>
+                            </td>
+                            <td>
+                                <input type="text" id="eno" ng-model="EmpNo" />
+                            </td>
+                            <td>
+                                <input type="button" class="btn btn-default" id="delete" value="Delete" ng-click="delete()" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="alert alert-success">{{Message}}</div>
+
+                </div>
+                <!--old end-->
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Employee Details</h2>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Employee No</th>
+                            <th>Employee Name</th>
+                            <th>Salary</th>
+                            <th>Dept Name</th>
+                            <th>Designation</th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="Emp in Employees">
+                        <tr ng-click="get(Emp)">
+                            <td> <span>{{Emp.EmpNo}}</span></td>
+                            <td> <span>{{Emp.EmpName}}</span></td>
+                            <td> <span>{{Emp.Salary}}</span></td>
+                            <td> <span>{{Emp.DeptName}}</span></td>
+                            <td> <span>{{Emp.Designation}}</span></td>
+                        </tr>
+                    </tbody>
+                </table>               
+            </div>
+            <div class="alert alert-warning">Click on the Employee to delete or update</div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/angular-route.js"></script>
+<script src="~/Scripts/MyScripts/Module.js"></script>
+<script src="~/Scripts/MyScripts/Service.js"></script>
+<script src="~/Scripts/MyScripts/Controller.js"></script>
