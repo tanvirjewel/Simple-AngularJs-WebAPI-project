@@ -23,7 +23,6 @@ namespace SampleAngularJs.Controllers
 
         public List<Employee> GetEmployees()
         {
-           EmployeeManager em=new EmployeeManager();
             return em.GetAll();
         }
 
@@ -34,7 +33,6 @@ namespace SampleAngularJs.Controllers
 
         public Employee GetEmployee(int id)
         {
-            EmployeeManager em = new EmployeeManager();
             return em.GetEmp(id);
 
         }
@@ -46,8 +44,7 @@ namespace SampleAngularJs.Controllers
         {
             try
             {
-                EmployeeManager emp = new EmployeeManager();
-                emp.Update(id,employee);
+                em.Update(id,employee);
                 return true;
             }
             catch { return false; }
@@ -59,7 +56,6 @@ namespace SampleAngularJs.Controllers
         /************************My Code*************/
         public IHttpActionResult PostEmployee(Employee employee)
         {
-            EmployeeManager em = new EmployeeManager();
             em.Save(employee);
             return CreatedAtRoute("DefaultApi", new { id = employee.EmpNo }, employee);
         }
@@ -71,8 +67,7 @@ namespace SampleAngularJs.Controllers
         {
             try
             {
-                EmployeeManager emp = new EmployeeManager();
-                emp.Delete(id);
+                em.Delete(id);
                 return true;
             }
             catch { return false; }
