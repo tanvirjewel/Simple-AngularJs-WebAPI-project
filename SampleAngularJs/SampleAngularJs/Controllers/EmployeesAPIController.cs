@@ -9,110 +9,75 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using SampleAngularJs.Models;
+using SampleAngularJs.Manager;
 
 namespace SampleAngularJs.Controllers
 {
     public class EmployeesAPIController : ApiController
     {
-        private EmployeeEntities db = new EmployeeEntities();
+        private EmployeeManager em = new EmployeeManager();
 
         // GET: api/EmployeesAPI
-        public IQueryable<Employee> GetEmployees()
+
+        /*******************My code here*********************/
+
+        public List<Employee> GetEmployees()
         {
-            return db.Employees;
+           EmployeeManager em=new EmployeeManager();
+            return em.GetAll();
         }
 
         // GET: api/EmployeesAPI/5
         [ResponseType(typeof(Employee))]
-        public IHttpActionResult GetEmployee(int id)
+  
+        /******************My Code *********************/
+
+        public Employee GetEmployee(int id)
         {
-            Employee employee = db.Employees.Find(id);
-            if (employee == null)
-            {
-                return NotFound();
-            }
+            EmployeeManager em = new EmployeeManager();
+            return em.GetEmp(id);
 
-            return Ok(employee);
         }
-
         // PUT: api/EmployeesAPI/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutEmployee(int id, Employee employee)
+
+        /******************My Code *********************/
+        public bool PutEmployee(int id, Employee employee)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != employee.EmpNo)
-            {
-                return BadRequest();
-            }
-
-            db.Entry(employee).State = EntityState.Modified;
-
             try
             {
-                db.SaveChanges();
+                EmployeeManager emp = new EmployeeManager();
+                emp.Update(id,employee);
+                return true;
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!EmployeeExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
+            catch { return false; }
         }
 
         // POST: api/EmployeesAPI
         [ResponseType(typeof(Employee))]
+       
+        /************************My Code*************/
         public IHttpActionResult PostEmployee(Employee employee)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            db.Employees.Add(employee);
-            db.SaveChanges();
-
+            EmployeeManager em = new EmployeeManager();
+            em.Save(employee);
             return CreatedAtRoute("DefaultApi", new { id = employee.EmpNo }, employee);
         }
 
         // DELETE: api/EmployeesAPI/5
-        [ResponseType(typeof(Employee))]
-        public IHttpActionResult DeleteEmployee(int id)
+
+        /*************************My Code *************************/
+        public bool DeleteEmployee(int id)
         {
-            Employee employee = db.Employees.Find(id);
-            if (employee == null)
+            try
             {
-                return NotFound();
+                EmployeeManager emp = new EmployeeManager();
+                emp.Delete(id);
+                return true;
             }
+            catch { return false; }
 
-            db.Employees.Remove(employee);
-            db.SaveChanges();
-
-            return Ok(employee);
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        private bool EmployeeExists(int id)
-        {
-            return db.Employees.Count(e => e.EmpNo == id) > 0;
-        }
     }
 }
