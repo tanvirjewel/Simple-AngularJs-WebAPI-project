@@ -28,3 +28,33 @@ c:\users\tanvir-jewel\documents\visual studio 2013\Projects\SampleAngularJs\Samp
 c:\users\tanvir-jewel\documents\visual studio 2013\Projects\SampleAngularJs\SampleAngularJs\obj\Debug\SampleAngularJs.csprojResolveAssemblyReference.cache
 c:\users\tanvir-jewel\documents\visual studio 2013\Projects\SampleAngularJs\SampleAngularJs\obj\Debug\SampleAngularJs.dll
 c:\users\tanvir-jewel\documents\visual studio 2013\Projects\SampleAngularJs\SampleAngularJs\obj\Debug\SampleAngularJs.pdb
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\SampleAngularJs.dll.config
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\SampleAngularJs.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\SampleAngularJs.pdb
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\EntityFramework.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\EntityFramework.SqlServer.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\Newtonsoft.Json.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Net.Http.Formatting.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Helpers.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Http.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Http.WebHost.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Mvc.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Razor.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Webpages.Deployment.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Webpages.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Webpages.Razor.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\EntityFramework.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\EntityFramework.SqlServer.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Razor.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Webpages.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Webpages.Deployment.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Webpages.Razor.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Helpers.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Mvc.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\Newtonsoft.Json.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Net.Http.Formatting.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Http.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\bin\System.Web.Http.WebHost.xml
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\obj\Debug\SampleAngularJs.csprojResolveAssemblyReference.cache
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\obj\Debug\SampleAngularJs.dll
+C:\Users\TANVIR-JEWEL\Documents\Simple-AngularJs-WebAPI-project\SampleAngularJs\SampleAngularJs\obj\Debug\SampleAngularJs.pdb
